@@ -1,0 +1,43 @@
+.android-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link,
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__topic{
+    padding: 12px 40px;
+    margin: 0;
+}
+
+.mdl-layout__content{
+    background: #f9f9f9;
+}
+    #viewer__content {
+        max-width: 1754px;
+    }
+
+@media(min-width:840px){
+    .swiper-container {
+        width: 100%;
+        padding-bottom:56.25%;
+        overflow:hidden;
+        background: #fff;
+    }
+        .swiper-container .swiper-wrapper{
+            position:absolute
+        }
+            .swiper-container .swiper-slide img{
+                height:100%;
+                display:block;
+                margin:auto;
+            }
+
+    .mdl-cell__viewer{
+        width:calc(100% - 460px);
+    }
+
+    .mdl-cell__recommend{
+        width:420px;
+    }
+}

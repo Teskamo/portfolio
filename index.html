@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Swiper.js (Carousel) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Swiper.js (Carousel) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <title>JD portfolio</title>
+</head>
+<body>
+    <div class="demo-layout-waterfall mdl-layout mdl-js-layout "> <!--mdl-layout--fixed-drawer-->
+        <header class="mdl-layout__header mdl-layout__header--waterfall">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Title</span>
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" name="sample" id="waterfall-exp">
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom row, not visible on scroll -->
+            <!--
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                </nav>
+            </div>
+            -->
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Title</span>
+                <nav class="mdl-navigation">
+                    <div class="android-drawer-separator"></div>
+
+                    <span class="mdl-navigation__topic" href="">Versions</span>
+                    <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
+                    <a class="mdl-navigation__link" href="">KitKat 4.4</a>
+                    <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
+                    <a class="mdl-navigation__link" href="">Android history</a>
+                    <div class="android-drawer-separator"></div>
+                </nav>
+            </span>
+        </div>
+        <main class="mdl-layout__content">
+            <div id="viewer__content" class="mdl-grid">
+                <div class="mdl-cell mdl-cell__viewer mdl-cell--12-col-tablet">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="img/carousel1.png"></div>
+                            <div class="swiper-slide"><img src="img/carousel2.png"></div>
+                            <div class="swiper-slide"><img src="img/carousel3.png"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <!--<div class="swiper-scrollbar"></div>-->
+                    </div>
+                    <div>
+                        <span>#회사홈페이지</span>
+                        <span>#ASP</span>
+                        <span>#VBScript</span>
+                    </div>
+                    <div>
+                        <span>의왕ICD 홈페이지(www.uicd.co.kr)</span>
+                    </div>
+                    <div>
+                        <span>2019. 8. ~ 2020. 11.</span>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell__recommend mdl-cell--12-col-tablet">3 (12 tablet)</div>
+            </div>
+        </main>
+    </div>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                //el: '.swiper-scrollbar',
+            },
+
+            autoplay:{
+                delay: 3000
+            },
+        });
+    </script>
+</body>
+</html>
