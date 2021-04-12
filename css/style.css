@@ -1,28 +1,77 @@
+a {
+    color: #000;
+    text-decoration: none;
+}
+.mdl-layout__header {
+    background-color:#fff;
+    color:#000;
+}
+
 .android-drawer-separator {
     height: 1px;
     background-color: #dcdcdc;
-    margin: 8px 0;
+    margin: 4px 0;
 }
-
-.mdl-layout__drawer .mdl-navigation .mdl-navigation__link,
-.mdl-layout__drawer .mdl-navigation .mdl-navigation__topic{
-    padding: 12px 40px;
-    margin: 0;
+.mdl-layout__drawer-button{
+    color: #606060;
 }
-
-.mdl-layout__content{
-    background: #f9f9f9;
+.mdl-layout__drawer-button2 {
+    display: block;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    border: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    font-size: 26px;
+    line-height: 56px;
+    font-family: Helvetica,Arial,sans-serif;
+    margin: 8px 12px;
+    top: 0;
+    left: 0;
+    color: #606060;
+    z-index: 4;
 }
-    #viewer__content {
-        max-width: 1754px;
+.mdl-layout__drawer{
+    background:#fff;
+    box-shadow:none;
+    border-right:none;
+}
+    .mdl-layout__drawer>.mdl-layout-title{
+        padding-left:80px;
+        color:#000;
     }
+    .mdl-layout__drawer .mdl-navigation{
+        padding-top:0;
+        padding-bottom:16px;
+    }
+        .mdl-layout__drawer .mdl-navigation .mdl-navigation__topic{
+            padding: 12px 20px;
+        }
+        .mdl-layout__drawer .mdl-navigation .mdl-navigation__link
+        {
+            padding: 12px 40px;
+            margin: 0;
+            color:#000;
+        }
+
+    .mdl-layout__content{
+        background: #f9f9f9;
+    }
+        #viewer__content {
+            max-width: 1754px;
+        }
 
 @media(min-width:840px){
     .swiper-container {
         width: 100%;
         padding-bottom:56.25%;
         overflow:hidden;
-        background: #fff;
+        background: #000;
     }
         .swiper-container .swiper-wrapper{
             position:absolute
@@ -41,3 +90,4 @@
         width:420px;
     }
 }
+.swiper-button-next, .swiper-button-prev {color:#fff;}

@@ -16,10 +16,10 @@
     <title>JD portfolio</title>
 </head>
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header"> <!--mdl-layout--fixed-drawer-->
+    <div class="demo-layout-waterfall mdl-layout mdl-js-layout "> <!--mdl-layout--fixed-drawer-->
         <header class="mdl-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
-                <!--<a href="/index.html"  class="mdl-layout-title">Portfolio LOGO</a>-->
+                <a href="/index.html"  class="mdl-layout-title">Portfolio LOGO</a>
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
                     <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
@@ -53,14 +53,71 @@
             </nav>
         </div>
         <main class="mdl-layout__content">
-            <div style="height:250px;background-image: url('img/channel_main.jpg');background-size:cover;background-position-y:50%;"></div>
             <div id="viewer__content" class="mdl-grid">
                 <div class="mdl-cell mdl-cell__viewer mdl-cell--12-col-tablet">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="img/carousel1.png"></div>
+                            <div class="swiper-slide"><img src="img/carousel2.png"></div>
+                            <div class="swiper-slide"><img src="img/carousel3.png"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
                     
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <!--<div class="swiper-scrollbar"></div>-->
+                    </div>
+                    <div style="padding: 20px 0 8px 0;border-bottom:1px solid rgba(0,0,0,.1)">
+                        <div style="color:#065fd4; font-size:12px">
+                            <span>#회사홈페이지</span>
+                            <span>#ASP</span>
+                            <span>#VBScript</span>
+                        </div>
+                        <div style="font-size: 18px;">
+                            <span>의왕ICD 홈페이지(www.uicd.co.kr)</span>
+                        </div>
+                        <div style="color: #606060; padding: 10px 0;">
+                            <span>2019. 8. ~ 2020. 11.</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="mdl-cell mdl-cell__recommend mdl-cell--12-col-tablet">3 (12 tablet)</div>
             </div>
         </main>
     </div>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                //el: '.swiper-scrollbar',
+            },
+
+            autoplay:{
+                delay: 3000
+            },
+        });
+    </script>
 </body>
 </html>
