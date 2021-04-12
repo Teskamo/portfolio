@@ -33,7 +33,7 @@
         </header>
         <div class="mdl-layout__drawer">
             <div class="mdl-layout-title">
-                <a href="/index.html">Portfolio LOGO</a>
+                <a href="/index.html">Portfolio</a>
                 <div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button2">
                     <i class="material-icons"></i>
                 </div>
@@ -54,12 +54,74 @@
         </div>
         <main class="mdl-layout__content">
             <div style="height:250px;background-image: url('img/channel_main.jpg');background-size:cover;background-position-y:50%;"></div>
-            <div id="viewer__content" class="mdl-grid">
-                <div class="mdl-cell mdl-cell__viewer mdl-cell--12-col-tablet">
-                    
+            <div id="viewer__content" class="project-viewer">
+                <div class="project-chunk">
+                    <div class="project-subheaders">
+                        <div class="project-title"># 사내 프로젝트</div>
+                        <div class="project-subtitle">입사한 회사내에서 진행한 프로젝트입니다</div>
+                    </div>
+                    <div class="project-contents">
+                        <a href="project_icd.html" class="project-item">
+                            <img src="img/3-uicd2.png" class="project-thumbnail">
+                            <div class="video-title">(주)의왕아이시디 홈페이지</div>
+                            <div class="video-metadata">2019.8. ~ 2019.11.</div>
+                        </a>
+                        <a href="" class="project-item">
+                            <img src="img/2-reviewnavi2.png" class="project-thumbnail">
+                            <div class="video-title">리뷰나비 플랫폼</div>
+                            <div class="video-metadata">2018.11. ~ 2019.5.</div>
+                        </a>
+                    </div>
+                    <div class="android-drawer-separator"></div>
                 </div>
-                <div class="mdl-cell mdl-cell__recommend mdl-cell--12-col-tablet">3 (12 tablet)</div>
+                <div class="project-chunk">
+                    <div class="project-subheaders">
+                        <div class="project-title"># 개인 프로젝트</div>
+                        <div class="project-subtitle">업무와 관련없이 진행한 프로젝트입니다</div>
+                    </div>
+                    <div class="project-contents">
+                        <a href="" class="project-item">
+                            <img src="img/1-fireballs2.png" class="project-thumbnail">
+                            <div class="video-title">파이어볼스 동아리</div>
+                            <div class="video-metadata">2016.1. ~ 2016.8.</div>
+                        </a>
+                    </div>
+                </div>
             </div>
+            <style>
+                .project-chunk{
+                    max-width:1280px;
+                    margin: auto;
+                }
+                    .project-subheaders{
+                        margin-top:24px;
+                    }
+                        .project-title{
+                            font-size: 16px;
+                        }
+                        .project-subtitle{
+                            margin-top:8px;
+                            color:#606060;
+                            font-size:14px;
+                        }
+                    .project-contents{
+                        margin-top:24px;
+                        margin-bottom:24px;
+                    }
+                        .project-item{
+                            margin-right: 4px;
+                            display:inline-block;
+                        }
+                            .project-thumbnail{
+                                width:210px;
+                            }
+                            .video-title{
+                                margin:8px 0;
+                            }
+                            .video-metadata{
+                                color: #606060;
+                            }
+            </style>
         </main>
     </div>
 </body>
