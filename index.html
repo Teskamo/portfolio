@@ -38,25 +38,7 @@
                     <i class="material-icons"></i>
                 </div>
             </div>
-            <nav class="mdl-navigation">
-                <span class="mdl-navigation__topic">Career</span>
-                <a class="mdl-navigation__link" href="project.html">프로젝트</a>
-                <!--<a class="mdl-navigation__link" href="intro.html">자기소개</a>-->
-                <a class="mdl-navigation__link" href="career.html">경력사항</a>
-
-                <div class="android-drawer-separator"></div>
-
-                <span class="mdl-navigation__topic">관심사</span>
-                <a class="mdl-navigation__link" href="">구독</a>
-                <a class="mdl-navigation__link" href="">취미</a>
-                <a class="mdl-navigation__link" href="">연습장</a>
-
-                <div class="android-drawer-separator"></div>
-
-                <span class="mdl-navigation__topic">포트폴리오</span>
-                <a class="mdl-navigation__link" href="">위시 리스트</a>
-                <a class="mdl-navigation__link" href="">패치노트</a>
-            </nav>
+            <% include('drawer.html') %>
         </div>
         <main class="mdl-layout__content">
             <div style="height:250px;background-image: url('img/channel_main.jpg');background-size:cover;background-position-y:50%;"></div>
@@ -64,7 +46,7 @@
                 <div class="project-chunk">
                     <div class="project-subheaders">
                         <div class="project-title"># 사내 프로젝트</div>
-                        <div class="project-subtitle">입사한 회사내에서 진행한 프로젝트입니다</div>
+                        <div class="project-subtitle">이전 근무지에서 진행했던 프로젝트입니다</div>
                     </div>
                     <div class="project-contents">
                         <a href="project_icd.html" class="project-item">
@@ -82,8 +64,8 @@
                 </div>
                 <div class="project-chunk">
                     <div class="project-subheaders">
-                        <div class="project-title"># 개인 프로젝트</div>
-                        <div class="project-subtitle">업무와 관련없이 진행한 프로젝트입니다</div>
+                        <div class="project-title"># 사이드 프로젝트</div>
+                        <div class="project-subtitle">역량강화를 위해 홀로 또는 협업하여 진행한 프로젝트입니다</div>
                     </div>
                     <div class="project-contents">
                         <a href="project_fireballs.html" class="project-item">
