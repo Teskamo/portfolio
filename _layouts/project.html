@@ -3,3 +3,75 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         {% include header.html %}
         {% include drawer.html %}
+        <main class="mdl-layout__content">
+            <div id="viewer__content" class="mdl-grid">
+                <div class="mdl-cell mdl-cell__viewer mdl-cell--12-col-tablet">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="../img/{{ page.carousel1 }}"></div>
+                            <div class="swiper-slide"><img src="../img/{{ page.carousel2 }}"></div>
+                            <div class="swiper-slide"><img src="../img/{{ page.carousel3 }}"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <!--<div class="swiper-scrollbar"></div>-->
+                    </div>
+                    <div style="padding: 20px 0 8px 0;border-bottom:1px solid rgba(0,0,0,.1)">
+                        <div style="color:#065fd4; font-size:12px">
+                            <span>{{ page.tag1 }}</span>
+                            <span>{{ page.tag2 }}</span>
+                            <span>{{ page.tag3 }}</span>
+                        </div>
+                        <div style="font-size: 18px;">
+                            <span>{{ page.title }}</span>
+                        </div>
+                        <div style="color: #606060; display:flex;align-items:center;justify-content:space-between;">
+                            <div>{{ page.regdate }}</div>
+                            <a href="{{ page.url }}" target="_blank" class="mdl-button mdl-js-button mdl-button--primary">
+                              사이트 이동
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-cell__recommend mdl-cell--12-col-tablet"></div>
+            </div>
+        </main>
+    </div>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                //el: '.swiper-scrollbar',
+            },
+
+            autoplay:{
+                delay: 3000
+            },
+        });
+    </script>
+</body>
+</html>
