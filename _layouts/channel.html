@@ -1,91 +1,44 @@
 {% include head.html %}
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall">
-            <div class="mdl-layout__header-row">
-                <!--<a href="/index.html"  class="mdl-layout-title">Portfolio LOGO</a>-->
-                <div class="mdl-layout-spacer"></div>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-                    <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
-                        <i class="material-icons">search</i>
-                    </label>
-                    <div class="mdl-textfield__expandable-holder">
-                        <input class="mdl-textfield__input" type="text" name="sample" id="waterfall-exp">
-                    </div>
-                </div>
-            </div>
-        </header>
+        {% include header.html %}
         {% include drawer.html %}
         <main class="mdl-layout__content">
-            <div style="height:250px;background-image: url('img/channel_potato3.jpg');background-size:cover;background-position-y:50%;"></div>
-            <div id="viewer__content" class="project-viewer">
-                <div class="project-chunk">
-                    <div class="project-subheaders">
-                        <div class="project-title"># 메인 프로젝트</div>
-                        <div class="project-subtitle">이전 근무지에서 진행했던 프로젝트입니다</div>
+            <div class="banner-area"></div>
+            <div id="viewer__content" class="list-viewer">
+                <div class="category-chunk">
+                    <div class="category-subheaders">
+                        <div class="category-title"># 메인 프로젝트</div>
+                        <div class="category-subtitle">이전 근무지에서 진행한 프로젝트입니다</div>
                     </div>
-                    <div class="project-contents">
-                        <a href="project/icd.html" class="project-item">
-                            <img src="img/thumb_icd.jpg" class="project-thumbnail">
+                    <div class="category-contents">
+                        <a href="project/icd.html" class="list-item">
+                            <img src="img/thumb_icd.jpg" class="list-thumbnail">
                             <div class="video-title">(주)의왕아이시디 홈페이지</div>
                             <div class="video-metadata">2019.8. ~ 2019.11.</div>
                         </a>
-                        <a href="project/reviewnavi.html" class="project-item">
-                            <img src="img/thumb_reviewnavi.jpg" class="project-thumbnail">
+                        <a href="project/reviewnavi.html" class="list-item">
+                            <img src="img/thumb_reviewnavi.jpg" class="list-thumbnail">
                             <div class="video-title">리뷰나비 플랫폼</div>
                             <div class="video-metadata">2018.11. ~ 2019.5.</div>
                         </a>
                     </div>
                     <div class="android-drawer-separator"></div>
                 </div>
-                <div class="project-chunk">
-                    <div class="project-subheaders">
-                        <div class="project-title"># 사이드 프로젝트</div>
-                        <div class="project-subtitle">역량강화를 위해 진행한 프로젝트입니다</div>
+                <div class="category-chunk">
+                    <div class="category-subheaders">
+                        <div class="category-title"># 사이드 프로젝트</div>
+                        <div class="category-subtitle">역량강화를 위해 진행한 프로젝트입니다</div>
                     </div>
-                    <div class="project-contents">
-                        <a href="project/fireballs.html" class="project-item">
-                            <img src="img/thumb_fireballs.jpg" class="project-thumbnail">
+                    <div class="category-contents">
+                        <a href="project/fireballs.html" class="list-item">
+                            <img src="img/thumb_fireballs.jpg" class="list-thumbnail">
                             <div class="video-title">파이어볼스 동아리</div>
                             <div class="video-metadata">2016.1. ~ 2016.8.</div>
                         </a>
                     </div>
                 </div>
             </div>
-            <style>
-                .project-chunk{
-                    max-width:1280px;
-                    margin: auto;
-                }
-                    .project-subheaders{
-                        margin-top:24px;
-                    }
-                        .project-title{
-                            font-size: 16px;
-                        }
-                        .project-subtitle{
-                            margin-top:8px;
-                            color:#606060;
-                            font-size:14px;
-                        }
-                    .project-contents{
-                        margin-top:24px;
-                        margin-bottom:24px;
-                    }
-                        .project-item{
-                            margin-right: 4px;
-                            display:inline-block;
-                        }
-                            .project-thumbnail{
-                                width:210px;
-                            }
-                            .video-title{
-                                margin:8px 0;
-                            }
-                            .video-metadata{
-                                color: #606060;
-                            }
-            </style>
         </main>
     </div>
 </body>

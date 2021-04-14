@@ -1,46 +1,51 @@
+/* 전역 */
 a {
     color: #000;
     text-decoration: none;
 }
+
+/* header */
 .mdl-layout__header {
     background-color:#fff;
     color:#000;
 }
+    .mdl-layout__header .mdl-layout__drawer-button{
+        color: #606060;
+    }
 
+/* drawer */
 .android-drawer-separator {
     height: 1px;
     background-color: #dcdcdc;
     margin: 4px 0;
 }
-.mdl-layout__header .mdl-layout__drawer-button{
-    color: #606060;
-}
-.mdl-layout__drawer-button2 {
-    display: block;
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    border: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    overflow: hidden;
-    text-align: center;
-    cursor: pointer;
-    font-size: 26px;
-    line-height: 56px;
-    font-family: Helvetica,Arial,sans-serif;
-    margin: 8px 12px;
-    top: 0;
-    left: 0;
-    color: #606060;
-    z-index: 4;
-}
+
 .mdl-layout__drawer{
     background:#fff;
     box-shadow:none;
     border-right:none;
 }
+    .mdl-layout__drawer .mdl-layout__drawer-button2 {
+        display: block;
+        position: absolute;
+        height: 48px;
+        width: 48px;
+        border: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+        font-size: 26px;
+        line-height: 56px;
+        font-family: Helvetica,Arial,sans-serif;
+        margin: 8px 12px;
+        top: 0;
+        left: 0;
+        color: #606060;
+        z-index: 4;
+    }
     .mdl-layout__drawer>.mdl-layout-title{
         padding-left:80px;
         color:#000;
@@ -59,13 +64,53 @@ a {
             color:#000;
         }
 
-    .mdl-layout__content{
-        background: #f9f9f9;
+/* content */
+.mdl-layout__content{
+    background: #f9f9f9;
+}
+    .banner-area{
+        height:250px;
+        background-image: url('../img/channel_potato3.jpg');
+        background-size:cover;
+        background-position-y:50%;
     }
-        #viewer__content {
-            max-width: 1754px;
+    #viewer__content {
+        max-width: 1754px;
+    }
+        .category-chunk{
+            max-width:1280px;
+            margin: auto;
         }
+            .category-subheaders{
+                margin-top:24px;
+            }
+                .category-title{
+                    font-size: 16px;
+                }
+                .category-subtitle{
+                    margin-top:8px;
+                    color:#606060;
+                    font-size:14px;
+                }
+            .category-contents{
+                margin-top:24px;
+                margin-bottom:24px;
+            }
+                .list-item{
+                    margin-right: 4px;
+                    display:inline-block;
+                }
+                    .list-thumbnail{
+                        width:210px;
+                    }
+                    .video-title{
+                        margin:8px 0;
+                    }
+                    .video-metadata{
+                        color: #606060;
+                    }
 
+/* project */
 @media(min-width:840px){
     .swiper-container {
         width: 100%;
@@ -91,3 +136,14 @@ a {
     }
 }
 .swiper-button-next, .swiper-button-prev {color:#fff;}
+
+/* career */
+.career-avatar{
+    margin-right: 16px;
+    max-width: 360px;
+    min-width: 240px;
+}
+    .career-avatar img{
+        display:block;
+        margin:auto;
+    }
