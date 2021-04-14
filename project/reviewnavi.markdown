@@ -1,14 +1,14 @@
 ---
 layout: project
-carousel1: "carousel-fireballs1.png"
-carousel2: "carousel-fireballs2.png"
-carousel3: "carousel-fireballs3.png"
-tag1: "#동아리 홈페이지"
+carousel1: "carousel-reviewnavi1.png"
+carousel2: "carousel-reviewnavi2.png"
+carousel3: "carousel-reviewnavi3.png"
+tag1: "#SNS 마케팅 플랫폼"
 tag2: "#PHP"
-tag3: "#그누보드"
-title:  "파이어볼스 홈페이지(fireballs.dothome.co.kr)"
-regdate: "2016. 1. ~ 2016. 8."
-url: "http://fireballs.dothome.co.kr"
+tag3: "#mdbootstrap"
+title: "리뷰나비(http://www.reviewnavi.co.kr)"
+regdate: "2018. 11. ~ 2019. 5."
+href: "http://www.reviewnavi.co.kr"
 #date:   2021-04-13 23:16:40 +0900
 #categories: jekyll update
 ---

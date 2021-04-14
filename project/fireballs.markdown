@@ -8,7 +8,7 @@ tag2: "#PHP"
 tag3: "#그누보드"
 title: "파이어볼스 홈페이지(fireballs.dothome.co.kr)"
 regdate: "2016. 1. ~ 2016. 8."
-url: "http://fireballs.dothome.co.kr"
+href: "http://fireballs.dothome.co.kr"
 #date:   2021-04-13 23:16:40 +0900
 #categories: jekyll update
 ---

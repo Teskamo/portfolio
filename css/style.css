@@ -12,7 +12,7 @@ a {
     background-color: #dcdcdc;
     margin: 4px 0;
 }
-.mdl-layout__drawer-button{
+.mdl-layout__header .mdl-layout__drawer-button{
     color: #606060;
 }
 .mdl-layout__drawer-button2 {

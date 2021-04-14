@@ -1,6 +1,6 @@
-{% include head.html %}
+{% include oneLevel/head.html %}
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         {% include oneLevel/header.html %}
         {% include oneLevel/drawer.html %}
         <main class="mdl-layout__content">
@@ -36,7 +36,7 @@
                         </div>
                         <div style="color: #606060; display:flex;align-items:center;justify-content:space-between;">
                             <div>{{ page.regdate }}</div>
-                            <a href="{{ page.url }}" target="_blank" class="mdl-button mdl-js-button mdl-button--primary">
+                            <a href="{{ page.href }}" target="_blank" class="mdl-button mdl-js-button mdl-button--primary">
                               사이트 이동
                             </a>
                         </div>
