@@ -103,10 +103,10 @@ a {
                     .list-thumbnail{
                         width:210px;
                     }
-                    .video-title{
+                    .list-title{
                         margin:8px 0;
                     }
-                    .video-metadata{
+                    .list-metadata{
                         color: #606060;
                     }
 
@@ -130,6 +130,16 @@ a {
     .mdl-cell__viewer{
         width:calc(100% - 460px);
     }
+        .project-tag{
+            color:#065fd4;
+            font-size:12px;
+        }
+        .project-info{
+            color: #606060;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
 
     .mdl-cell__recommend{
         width:420px;
@@ -138,12 +148,25 @@ a {
 .swiper-button-next, .swiper-button-prev {color:#fff;}
 
 /* career */
+.career-contents{
+    display:flex;
+}
 .career-avatar{
     margin-right: 16px;
     max-width: 360px;
     min-width: 240px;
+    flex:1;
 }
     .career-avatar img{
         display:block;
         margin:auto;
+    }
+.career-info{
+    flex:1;
+}
+    .career-info .list-title{
+        font-size:18px;
+    }
+    .career-info .list-metadata{
+        font-size:13px;
     }
