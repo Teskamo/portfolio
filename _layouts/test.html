@@ -1,0 +1,17 @@
+{% include head.html %}
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        {% include header.html %}
+        {% include drawer.html %}
+        <main class="mdl-layout__content">
+            <div class="banner-area"></div>
+            <div id="viewer__content" class="project-viewer">
+                {% for release in site.data.release %}
+                
+                <div {% if release.checked %} checked {% endif %}>테스트</div>
+                
+                {% endfor %}
+            </div>
+        </main>
+    </div>
+</body>
