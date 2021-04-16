@@ -12,6 +12,9 @@ a {
     .mdl-layout__header .mdl-layout__drawer-button{
         color: #606060;
     }
+    .mdl-layout--fixed-drawer .mdl-layout__header .mdl-layout-title {
+        display:none;
+    }
 
 /* drawer */
 .android-drawer-separator {

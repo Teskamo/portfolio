@@ -13,7 +13,7 @@
                             <tr>
                                 <th>
                                     <!--
-                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-data-table__select" for="table-header">
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-data-table__select" for="table-header">
                                         <input type="checkbox" id="table-header" class="mdl-checkbox__input" />
                                     </label>
                                     -->
@@ -26,78 +26,20 @@
                             </tr>
                         </thead>
                         <tbody>
+                            {% for release in site.data.release %}
                             <tr>
                                 <td>
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-data-table__select" for="row[1]">
-                                        <input type="checkbox" id="row[1]" class="mdl-checkbox__input" />
+                                        <input type="checkbox" id="row[1]" class="mdl-checkbox__input" {% if release.checked %} checked {% endif %}/>
                                     </label>
                                 </td>
-                                <td class="mdl-data-table__cell--non-numeric">component 재사용 방법 찾기</td>
-                                <td class="mdl-data-table__cell--non-numeric">관리에 유리, jekyll 숙련</td>
-                                <td class="mdl-data-table__cell--non-numeric">2021/04/15</td>
-                                <td class="mdl-data-table__cell--non-numeric"></td>
-                                <td class="mdl-data-table__cell--non-numeric"></td>
+                                <td class="mdl-data-table__cell--non-numeric">{{ release.content }}</td>
+                                <td class="mdl-data-table__cell--non-numeric">{{ release.purpose }}</td>
+                                <td class="mdl-data-table__cell--non-numeric">{{ release.regDate }}</td>
+                                <td class="mdl-data-table__cell--non-numeric">{{ release.applyDate }}</td>
+                                <td class="mdl-data-table__cell--non-numeric">{{ release.remark }}</td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-data-table__select" for="row[2]">
-                                        <input type="checkbox" id="row[2]" class="mdl-checkbox__input" />
-                                    </label>
-                                </td>
-                                <td class="mdl-data-table__cell--non-numeric">반응형 적용</td>
-                                <td class="mdl-data-table__cell--non-numeric">모바일/태블릿 접근성</td>
-                                <td class="mdl-data-table__cell--non-numeric">2021/04/12</td>
-                                <td class="mdl-data-table__cell--non-numeric"></td>
-                                <td class="mdl-data-table__cell--non-numeric"></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-data-table__select" for="row[3]">
-                                        <input type="checkbox" id="row[3]" class="mdl-checkbox__input" />
-                                    </label>
-                               </td>
-                                <td class="mdl-data-table__cell--non-numeric">햄버거 메뉴 함수 바인딩</td>
-                                <td class="mdl-data-table__cell--non-numeric">페이지 완성도 향상</td>
-                                <td class="mdl-data-table__cell--non-numeric">2021/04/12</td>
-                                <td class="mdl-data-table__cell--non-numeric"></td>
-                                <td class="mdl-data-table__cell--non-numeric">index.html에서 뭐하지?</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-data-table__select" for="row[4]">
-                                        <input type="checkbox" id="row[4]" class="mdl-checkbox__input" />
-                                    </label>
-                                </td>
-                                <td class="mdl-data-table__cell--non-numeric">css var 이용 리팩토링</td>
-                                <td class="mdl-data-table__cell--non-numeric">테마 적용</td>
-                                <td class="mdl-data-table__cell--non-numeric">2021/04/12</td>
-                                <td class="mdl-data-table__cell--non-numeric"></td>
-                                <td class="mdl-data-table__cell--non-numeric"></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-data-table__select" for="row[5]">
-                                        <input type="checkbox" id="row[5]" class="mdl-checkbox__input" />
-                                    </label>
-                                </td>
-                                <td class="mdl-data-table__cell--non-numeric">index.html 디자인</td>
-                                <td class="mdl-data-table__cell--non-numeric">project 페이지와 분리</td>
-                                <td class="mdl-data-table__cell--non-numeric">2021/04/15</td>
-                                <td class="mdl-data-table__cell--non-numeric"></td>
-                                <td class="mdl-data-table__cell--non-numeric">유튜브 메인은 추천영상임</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-data-table__select" for="row[6]">
-                                        <input type="checkbox" id="row[6]" class="mdl-checkbox__input" checked/>
-                                    </label>
-                                </td>
-                                <td class="mdl-data-table__cell--non-numeric">github jekyll 적용</td>
-                                <td class="mdl-data-table__cell--non-numeric">Include html 파일</td>
-                                <td class="mdl-data-table__cell--non-numeric">2021/04/12</td>
-                                <td class="mdl-data-table__cell--non-numeric">2021/04/14</td>
-                                <td class="mdl-data-table__cell--non-numeric"></td>
-                            </tr>
+                            {% endfor %}
                         </tbody>
                       </table>
                     <div class="android-drawer-separator"></div>

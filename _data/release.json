@@ -1,18 +1,65 @@
 [
+        {
+        "checked":false,
+        "content":"반응형 적용",
+        "purpose":"모바일/태블릿 접근성",
+        "regDate":"2021/04/14",
+        "applyDate":"",
+        "remark":""
+    },
     {
         "checked":false,
-        "content":"component 재사용 방법 찾기",
-        "purpose":"",
-        "regDate":"",
+        "content":"햄버거 메뉴 함수 바인딩",
+        "purpose":"페이지 완성도 향상",
+        "regDate":"2021/04/12",
+        "applyDate":"",
+        "remark":"index.html에서 함수 정의"
+    },
+    {
+        "checked":false,
+        "content":"css var 이용 리팩토링",
+        "purpose":"어두운테마/밝은테마",
+        "regDate":"2021/04/12",
+        "applyDate":"",
+        "remark":""
+    },
+    {
+        "checked":false,
+        "content":"index.html 디자인",
+        "purpose":"project.html과 분리",
+        "regDate":"2021/04/15",
+        "applyDate":"",
+        "remark":"유튜브 메인은 추천영상"
+    },
+    {
+        "checked":false,
+        "content":"자기소개 페이지 추가",
+        "purpose":"내 생각정리 하는 페이지",
+        "regDate":"2021/04/16",
+        "applyDate":"",
+        "remark":"index.html??"
+    },
+    {
+        "checked":false,
+        "content":"시퀀스 or react.js 프로젝트",
+        "purpose":"사이드 프로젝트 추가",
+        "regDate":"2021/04/16",
         "applyDate":"",
         "remark":""
     },
     {
         "checked":true,
-        "content":"반응형 적용",
-        "purpose":"",
-        "regDate":"",
-        "applyDate":"",
+        "content":"github jekyll 적용",
+        "purpose":"include html 파일",
+        "regDate":"2021/04/12",
+        "applyDate":"2021/04/14",
+        "remark":"{{site.baseurl}}로 project/*.html에서 접근 해결"
+    },{
+        "checked":true,
+        "content":"component 재사용 방법 찾기",
+        "purpose":"관리에 유리, jekyll 숙련",
+        "regDate":"2021/04/15",
+        "applyDate":"2021/04/16",
         "remark":""
     }
 ]
